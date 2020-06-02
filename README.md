@@ -12,13 +12,35 @@ description: NetCat Basics
 netcat -u <target-ip> 2468
 ```
 
-![](assets/11.png)
+![](assets/21.png)
 
 * On Server Side Run
 
 ```text
 netcat -u -l -p 2468
 ```
+
+![](assets/22.png)
+
+* We can observe the network connection using netstat
+
+```text
+netstat | grep 2468
+```
+
+![](assets/23.png)
+
+### 2. Connecting & Listening To TCP Port
+
+* On Client Side Run 
+
+```text
+netcat -u <target-ip> 1357
+```
+
+![](assets/11.png)
+
+* On Server Side Run
 
 ![](assets/12.png)
 
@@ -29,28 +51,6 @@ netstat | grep 2468
 ```
 
 ![](assets/13.png)
-
-### 2. Connecting & Listening To TCP Port
-
-* On Client Side Run 
-
-```text
-netcat -u <target-ip> 1357
-```
-
-![](assets/1%20%281%29.png)
-
-* On Server Side Run
-
-![](assets/2%20%281%29.png)
-
-* We can observe the network connection using netstat
-
-```text
-netstat | grep 2468
-```
-
-![](assets/33.png)
 
 ### 3. Transferring Files with Netcat
 
