@@ -50,7 +50,7 @@ netcat -u <target-ip> 1357
 netstat | grep 2468
 ```
 
-![](assets/3.png)
+![](assets/33.png)
 
 ### 3. Transferring Files with Netcat
 
@@ -72,7 +72,7 @@ nc -l -p <port> file_name
 
 * Can view the file on the target
 
-![](assets/3%20%282%29.png)
+![](assets/3.png)
 
 ### 
 
