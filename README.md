@@ -12,7 +12,7 @@ description: NetCat Basics
 netcat -u <target-ip> 2468
 ```
 
-![](assets/1%20%282%29.png)
+![](assets/11.png)
 
 * On Server Side Run
 
@@ -20,7 +20,7 @@ netcat -u <target-ip> 2468
 netcat -u -l -p 2468
 ```
 
-![](assets/2%20%282%29.png)
+![](assets/12.png)
 
 * We can observe the network connection using netstat
 
@@ -28,7 +28,7 @@ netcat -u -l -p 2468
 netstat | grep 2468
 ```
 
-![](assets/3%20%281%29.png)
+![](assets/13.png)
 
 ### 2. Connecting & Listening To TCP Port
 
