@@ -12,7 +12,7 @@ description: NetCat Basics
 netcat -u <target-ip> 2468
 ```
 
-![](.gitbook/assets/1%20%282%29.png)
+![](assets/1%20%282%29.png)
 
 * On Server Side Run
 
@@ -20,7 +20,7 @@ netcat -u <target-ip> 2468
 netcat -u -l -p 2468
 ```
 
-![](.gitbook/assets/2%20%282%29.png)
+![](assets/2%20%282%29.png)
 
 * We can observe the network connection using netstat
 
@@ -28,7 +28,7 @@ netcat -u -l -p 2468
 netstat | grep 2468
 ```
 
-![](.gitbook/assets/3%20%281%29.png)
+![](assets/3%20%281%29.png)
 
 ### 2. Connecting & Listening To TCP Port
 
@@ -38,11 +38,11 @@ netstat | grep 2468
 netcat -u <target-ip> 1357
 ```
 
-![](.gitbook/assets/1%20%281%29.png)
+![](assets/1%20%281%29.png)
 
 * On Server Side Run
 
-![](.gitbook/assets/2%20%281%29.png)
+![](assets/2%20%281%29.png)
 
 * We can observe the network connection using netstat
 
@@ -50,7 +50,7 @@ netcat -u <target-ip> 1357
 netstat | grep 2468
 ```
 
-![](.gitbook/assets/3.png)
+![](assets/3.png)
 
 ### 3. Transferring Files with Netcat
 
@@ -60,7 +60,7 @@ netstat | grep 2468
 nc <target_ip> <port> < file_name
 ```
 
-![](.gitbook/assets/1.png)
+![](assets/1.png)
 
 * On Server Side Run
 
@@ -68,11 +68,11 @@ nc <target_ip> <port> < file_name
 nc -l -p <port> file_name
 ```
 
-![](.gitbook/assets/2.png)
+![](assets/2.png)
 
 * Can view the file on the target
 
-![](.gitbook/assets/3%20%282%29.png)
+![](assets/3%20%282%29.png)
 
 ### 
 
