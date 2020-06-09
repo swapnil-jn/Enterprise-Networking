@@ -4,23 +4,23 @@
 
 Load the vulnserver into Immunity Debuuger
 
-![](assets/1_running_immunity.jpg)
+![](assets/1_running_immunity.JPG)
 
 Spiking 
 
 ![](assets/2_sending_generic_tcp.png)
 
-![](assets/3_stat.jpg)
+![](assets/3_stat.JPG)
 
 ![](assets/4_trun.png)
 
-![](assets/5_trun_crashed.jpg)
+![](assets/5_trun_crashed.JPG)
 
 ### Calculate the location of overwriting
 
 ![](assets/1_scr.png)
 
-![](assets/2_crashed.jpg)
+![](assets/2_crashed.JPG)
 
 ![](assets/3_location.png)
 
@@ -30,27 +30,27 @@ Certain byte characters can cause issues in the development of exploits. We must
 
 ![](assets/1_script_bad_chars.png)
 
-![](assets/3_chars.jpg)
+![](assets/3_chars.JPG)
 
 So, let’s again close/re-open Vulnserver and Immunity Debugger and send this bad boy off. Once you have sent the exploit, you will need to right click on the ESP register and select “Follow in Dump”. You should notice a little bit of movement in the bottom left corner of the program. If you look carefully, you should see all of your bytes in order starting with 01, 02, 03, etc and ending with FF. If a bad character were present, it would seem out of place. Luckily for us, there are no bad characters in the Vulnserver program. Notice below how all of our numbers appear perfect and in order:
 
-![](assets/4_hex_dump_esp.jpg)
+![](assets/4_hex_dump_esp.JPG)
 
 Examine this picture below and see if you can identify the bad characters:
 
-![](assets/5_missing_chars.jpg)
+![](assets/5_missing_chars.JPG)
 
 ### JMP ESP Technique
 
-![](assets/1_load_mona_modules.jpg)
+![](assets/1_load_mona_modules.JPG)
 
-![](assets/2_loaded.jpg)
+![](assets/2_loaded.JPG)
 
 ![](assets/3_nasm_shell.png)
 
-![](assets/4_find.jpg)
+![](assets/4_find.JPG)
 
-![](assets/6.jpg)
+![](assets/6.JPG)
 
 ### Exploit 
 
@@ -71,7 +71,7 @@ Run the python script
 
 ![](assets/6_running_python_script.png)
 
-![](assets/5_running_administrator.jpg)
+![](assets/5_running_administrator.JPG)
 
 Gain the shell
 
