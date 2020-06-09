@@ -11,7 +11,7 @@ nmap -sP ip
 #sP Only Discovery
 ```
 
-![](.gitbook/assets/1%20%284%29.png)
+![](assets/1%20%284%29.png)
 
 ### No Ping Scan
 
@@ -19,7 +19,7 @@ nmap -sP ip
 nmap -Pn ip
 ```
 
-![](.gitbook/assets/1_ping_scan.png)
+![](assets/1_ping_scan.png)
 
 ### Service Version Scan
 
@@ -27,7 +27,7 @@ nmap -Pn ip
 nmap -sV ip
 ```
 
-![](.gitbook/assets/service_version.png)
+![](assets/service_version.png)
 
 ### All Scan
 
