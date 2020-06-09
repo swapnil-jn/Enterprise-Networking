@@ -59,5 +59,5 @@ nmap -sU -sT -p0-65535 ip
 
 #### Vulner script
 
-![](assets/1_vulners.png)
+![](assets/1_VULNERS.png)
 
