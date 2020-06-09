@@ -4,39 +4,39 @@
 
 * Start Wireshark
 
-![](.gitbook/assets/w-1.png)
+![](assets/w-1.png)
 
 * Select interface
 
-![](.gitbook/assets/w-2.png)
+![](assets/w-2.png)
 
 * Setup
 
-![](.gitbook/assets/w-3.png)
+![](assets/w-3.png)
 
 ### Protocol Filters
 
 * Http Filter
 
-![](.gitbook/assets/http_1%20%282%29.png)
+![](assets/http_1%20%282%29.png)
 
 * TCP filter
 
-![](.gitbook/assets/tcp_1.png)
+![](assets/tcp_1.png)
 
 * With tcpdump
 
-![](.gitbook/assets/1_protocol.png)
+![](assets/1_protocol.png)
 
 ### IP Filter
 
 * `ip.src == ip`
 
-![](.gitbook/assets/src-ip.png)
+![](assets/src-ip.png)
 
 * `ip.dst == ip`
 
-![](.gitbook/assets/dest-ip.png)
+![](assets/dest-ip.png)
 
 * With tcpdump
 
