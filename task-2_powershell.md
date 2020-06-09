@@ -4,11 +4,11 @@
 
 * Create a file to be transfered
 
-![](/assets/1_powershell.jpg)
+![](assets/1_powershell.jpg)
 
 * Start python server
 
-![](/assets/2_powershell.jpg)
+![](assets/2_powershell.jpg)
 
 * Run below command
 
