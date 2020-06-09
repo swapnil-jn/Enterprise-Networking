@@ -11,7 +11,7 @@ nmap -sP ip
 #sP Only Discovery
 ```
 
-![](assets/1%20%284%29.png)
+![](assets/1_host.png)
 
 ### No Ping Scan
 
