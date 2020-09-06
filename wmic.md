@@ -10,7 +10,7 @@ To do this, we will first get the meterpreter session on the Remote PC. After ga
 
 `wmic /?`
 
-![](assets/wmic_1%20%287%29.png)
+![](assets/wmic_1.png)
 
 #### **Get System Roles, User Name, and Manufacturer**
 
@@ -30,7 +30,7 @@ We are adding the following filters to get a specific result.
 wmic computersystem get Name, domain, Manufacturer, Model, Username, Roles /format:list
 ```
 
-![](assets/wmic_2%20%283%29.png)
+![](assets/wmic_2.png)
 
 #### **Get the SIDs**
 
@@ -42,7 +42,7 @@ wmic group get Caption, InstallDate, LocalAccount, Domain, SID, Status
 
 As shown in the below image here we have found the Account Name, Domain, Local Group Member status, SID and their status.
 
-![](assets/wmic_3%20%283%29.png)
+![](assets/wmic_3.png)
 
 #### **Create a process**
 
@@ -58,7 +58,7 @@ wmic process call create "taskmgr.exe"
 
 **Note:** if the process creates a window like Task Manager, cmd, etc. then this command will open up that window on the victim’s system and create suspicion in the mind of the victim.
 
-![](assets/wmic_4%20%281%29.png)
+![](assets/wmic_4.png)
 
 #### **Change Priority of a Process**
 
@@ -167,4 +167,4 @@ Wmic can be used to delete system logs using the **nteventlog alias**. It is a v
 wmic nteventlog where filename='system' call cleareventlog
 ```
 
-![](assets/wmic_15%20%281%29.png)
+![](assets/wmic_15.png)
