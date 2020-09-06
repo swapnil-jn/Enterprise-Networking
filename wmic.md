@@ -10,7 +10,7 @@ To do this, we will first get the meterpreter session on the Remote PC. After ga
 
 `wmic /?`
 
-![](.gitbook/assets/wmic_1%20%287%29.png)
+![](assets/wmic_1%20%287%29.png)
 
 #### **Get System Roles, User Name, and Manufacturer**
 
@@ -30,7 +30,7 @@ We are adding the following filters to get a specific result.
 wmic computersystem get Name, domain, Manufacturer, Model, Username, Roles /format:list
 ```
 
-![](.gitbook/assets/wmic_2%20%283%29.png)
+![](assets/wmic_2%20%283%29.png)
 
 #### **Get the SIDs**
 
@@ -42,7 +42,7 @@ wmic group get Caption, InstallDate, LocalAccount, Domain, SID, Status
 
 As shown in the below image here we have found the Account Name, Domain, Local Group Member status, SID and their status.
 
-![](.gitbook/assets/wmic_3%20%283%29.png)
+![](assets/wmic_3%20%283%29.png)
 
 #### **Create a process**
 
@@ -58,7 +58,7 @@ wmic process call create "taskmgr.exe"
 
 **Note:** if the process creates a window like Task Manager, cmd, etc. then this command will open up that window on the victim’s system and create suspicion in the mind of the victim.
 
-![](.gitbook/assets/wmic_4%20%281%29.png)
+![](assets/wmic_4%20%281%29.png)
 
 #### **Change Priority of a Process**
 
@@ -70,7 +70,7 @@ This is an important feature because it can be used to manipulate processes as w
 wmic process where name="explorer.exe" call setpriority 64
 ```
 
-![](.gitbook/assets/wmic_5.png)
+![](assets/wmic_5.png)
 
 #### **Get a list of Executable Files**
 
@@ -80,7 +80,7 @@ We can get a list which contains the location of the executable files other than
 wmic PROCESS WHERE "NOT ExecutablePath LIKE ‘%Windows%’" GET ExecutablePath
 ```
 
-![](.gitbook/assets/wmic_6.png)
+![](assets/wmic_6.png)
 
 #### **Locate System Files**
 
@@ -90,7 +90,7 @@ Extract paths of all the important system files like temp folder, win directory 
 wmic environment get Description, VariableValue
 ```
 
-![](.gitbook/assets/wmic_7.png)
+![](assets/wmic_7.png)
 
 #### **Get a list of Installed Applications**
 
@@ -100,7 +100,7 @@ We can get a list of applications or software installed on the victim’s system
 wmic product get name
 ```
 
-![](.gitbook/assets/wmic_8.png)
+![](assets/wmic_8.png)
 
 #### **Get a list of Running Services**
 
@@ -110,13 +110,13 @@ We can fetch the list of services which are running and services which start aut
 wmic service where (state="running") get caption, name, startmode, state
 ```
 
-![](.gitbook/assets/wmic_9.png)
+![](assets/wmic_9.png)
 
 #### **Get Startup Services**
 
 We can enumerate startup services using startup alias for all the services that run during the windows startup.
 
-![](.gitbook/assets/wmic_10.png)
+![](assets/wmic_10.png)
 
 #### **Get System Driver Details**
 
@@ -128,7 +128,7 @@ This command gives the path of the driver file, its status \(Running or Stopped\
 wmic sysdriver get Caption, Name, PathName, ServiceType, State, Status /format:list
 ```
 
-![](.gitbook/assets/wmic_11.png)
+![](assets/wmic_11.png)
 
 #### **Get the Motherboard Details**
 
@@ -138,7 +138,7 @@ We can use the **baseboard alias** of the wmic command line to enumerate the mot
 wmic baseboard get Manufacturer, Product, SerialNumber, Version
 ```
 
-![](.gitbook/assets/wmic_12.png)
+![](assets/wmic_12.png)
 
 #### **Get BIOS Serial Number**
 
@@ -149,13 +149,13 @@ We can use the **bios alias** of the wmic command line to enumerate the bios det
 wmic bios, get serialNumber
 ```
 
-![](.gitbook/assets/wmic_13.png)
+![](assets/wmic_13.png)
 
 #### **Get Antivirus Details**
 
 We can enumerate the antivirus installed on the victim’s system along with its location and version.
 
-![](.gitbook/assets/wmic_14.png)
+![](assets/wmic_14.png)
 
 #### **Clear System Logs**
 
@@ -167,4 +167,4 @@ Wmic can be used to delete system logs using the **nteventlog alias**. It is a v
 wmic nteventlog where filename='system' call cleareventlog
 ```
 
-![](.gitbook/assets/wmic_15%20%281%29.png)
+![](assets/wmic_15%20%281%29.png)
